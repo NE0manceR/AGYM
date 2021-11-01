@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/fitness-for-beginners",
+      "handler": "fitness-for-beginners.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/fitness-for-beginners",
+      "handler": "fitness-for-beginners.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/fitness-for-beginners",
+      "handler": "fitness-for-beginners.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

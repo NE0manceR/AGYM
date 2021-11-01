@@ -1,0 +1,24 @@
+@import './colors.moduls.scss';
+
+.more_btn {
+  text-decoration: none;
+  padding: 16px 24px;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  background-color: $primary-white;
+  color: $bcg-primary;
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+  
+
+  &:hover {
+    border-color: $primary-white;
+    background-color: $bcg-primary;
+    color: $primary-white;
+  }
+
+  &:active {
+    background-color: $bcg-secondary;
+  }
+}

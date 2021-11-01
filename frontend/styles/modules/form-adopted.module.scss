@@ -1,0 +1,86 @@
+@import './colors.moduls.scss';
+
+
+.adopted {
+  position: fixed;
+  top: 0;
+  left: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  padding: 0 16px;
+}
+
+.message_wrap {
+  opacity: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 64px;
+  background: #212A35;
+  width: 591px;
+  height: 586px;
+  border-radius: 30px;
+  animation: showWindow;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+
+  @media (max-width: 600px) {
+    padding: 24px 24px;
+    transform: translateY(24px);
+  }
+  
+  .apple {
+    position: absolute;
+    top: -80px;
+    left: calc(50% - 80px);
+    background: #212A35;
+    width: 162px;
+    height: 162px;
+    border-radius: 50%;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: scale-down;
+    }
+ 
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+    align-self: flex-end;
+    margin-bottom: 152px;
+    cursor: pointer;
+
+  }
+
+  & > span {
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .confirm_btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+@keyframes showWindow {
+  0% {
+
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

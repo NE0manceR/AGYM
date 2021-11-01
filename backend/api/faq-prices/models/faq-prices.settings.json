@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faq_prices",
+  "info": {
+    "name": "FAQ Prices"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,358 @@
+@import './colors.moduls.scss';
+
+.membership {
+
+}
+
+.month_info_bcg {
+  background: url('../../public/membership/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.month_info_wrap {
+  max-width: 1224px;
+  margin: 0 auto;
+  padding: 40px 16px 64px;
+
+  @media (max-width: 600px) {
+    padding: 20px 16px 64px;
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  font-size: 48px;
+  color: white;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 48px;
+  font-weight: 800;
+  
+  span {
+    font-weight: 800;
+  }
+
+  @media (max-width: 600px) {
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 580px) {
+    font-size: 30px;
+  }
+}
+
+.crumbs {
+  margin-bottom: 40px;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.left_wrap {
+  width: 600px;
+  @media (max-width: 1070px) {
+    width: auto;
+  }
+
+
+  .table {
+    border: 1px solid #C4C4C4;
+    margin-bottom: 20px;
+
+    .periods_wrap {
+      display: flex;
+
+      @media (max-width: 480px) {
+        flex-direction: column;
+        align-items: center
+      }
+    }
+
+    .period_wrap {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      padding-top: 4px;
+
+      @media (max-width: 480px) {
+        width: 100%;
+      }
+    }
+
+    .period_wrap:nth-child(1) {
+      border-right: 1px solid #C4C4C4;
+
+      @media (max-width: 480px) {
+        border-right: none;
+        border-bottom: 1px solid #C4C4C4;
+      }
+    }
+
+    .period, .time {
+      text-align: center;
+    }
+
+    .period {
+      font-size: 18px;
+    }
+
+    .time {
+      margin-bottom: 12px;
+      font-size: 16px;
+      font-weight: 700;
+      color: $primary_white;
+    }
+
+    .month_wrap {
+      display: flex;
+      justify-content: space-between;
+      width: 180px;
+      margin: 0 auto;
+      color: $primary_white;
+      margin-bottom: 12px;
+      .month {
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      .price {
+        font-size: 16px;
+        font-weight: 900;
+      }
+
+      .letters {
+        font-size: 10px;
+      }
+    }
+
+    .month_wrap:last-child {
+      margin-bottom: 20px;
+    }
+    
+  }
+
+  .table_info {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    color: $primary_white;
+    margin-bottom: 4px;
+  }
+
+}
+
+.workout {
+  font-size: 24px;
+  font-weight: 900;
+  color: $primary_white;
+  margin-bottom: 12px;
+}
+
+.personal {
+  display: flex;
+  color: $primary_white;
+  padding: 10px 0 10px 20px;
+  border-top: 1px solid #C4C4C4;
+
+  .text {
+    display: inline-block;
+    margin-right: 16px;
+    font-weight: 700;
+
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
+  }
+
+  .personal_info {
+    font-size: 10px;
+  }
+}
+
+.workout_price {
+  padding: 10px 64px 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #C4C4C4;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 392px;
+  height: 187px;
+  padding-top: 40px;
+  background: $primary_gradient;
+  border-radius: 10px;
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+
+  span {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    &:nth-child(1) {
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.right_wrap {
+  padding: 0 16px;
+
+  .link, a {
+    text-decoration: underline;
+    display: block;
+    text-align: center;
+    transform: translateY(-50px);
+    color: $primary_white;
+    cursor: pointer;
+  }
+}
+
+.procent {
+  display: block;
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: 900;
+  line-height: 0.8;
+  font-size: 130px;
+  color: $primary_white;
+  transform: translateY(-50px);;
+}
+
+.section_wrap {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 1070px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+.price_card_bcg {
+  background-color: $bcg-secondary;
+  padding-bottom: 100px;
+}
+
+.price_card {
+  max-width: 1224px;
+  margin: 0 auto;
+
+  .card_price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 44px 34px;
+    width: 290px;
+    height: 444px;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    color: white;
+    font-weight: 900;
+
+    .card_month {
+      font-size: 36px;
+      margin-bottom: 16px;
+    }
+
+    .card_workout {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+
+    .card_bonus {
+      min-height: 30px;
+      font-size: 24px;
+      margin-bottom: 32px;
+    }
+
+    .card_value {
+      font-size: 36px;
+      margin-bottom: 32px;
+    }
+
+    .card_freezing {
+      display: block;
+      text-align: center;
+      font-size: 30px;
+    }
+  }
+}
+
+.card_wrap {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 0 32px 0;
+
+  @media (max-width: 1270px) {
+    padding: 0 16px 32px;
+  }
+
+  @media (max-width: 650px) {
+    justify-content: center;
+    padding: 0 16px;
+  }
+}
+
+.article_title {
+  display: block;
+  font-size: 24px;
+  padding: 64px 16px 0 16px;
+
+
+  @media (max-width: 374px) {
+    font-size: 20px;
+  }
+}
+
+.text_wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  bottom: 65px;
+  color: $primary_white;
+  font-size: 18px;
+  padding: 0 16px 42px;
+
+  span {
+    display: block;
+    font-size: 18px;
+
+    @media (max-width: 640px) {
+      padding-left: 0;
+    }
+  }
+
+  .level_link {
+    text-decoration: underline;
+    display: inline;
+    color: $secondary-hight;
+    cursor: pointer;
+  }
+}
+
+.popular {
+  max-width: 1224px;
+  margin: 0 auto;
+  padding: 64px 16px;
+}
+
+.popular_title {
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin-bottom: 64px;
+}

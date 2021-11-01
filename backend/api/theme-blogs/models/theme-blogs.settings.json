@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "theme_blogs",
+  "info": {
+    "name": "Theme Blogs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "sub_theme_blogs": {
+      "via": "theme_blogs",
+      "collection": "sub-theme-blogs",
+      "dominant": true
+    },
+    "key": {
+      "type": "string",
+      "unique": true
+    }
+  }
+}

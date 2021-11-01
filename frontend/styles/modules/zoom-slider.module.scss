@@ -1,0 +1,140 @@
+@import './colors.moduls.scss';
+
+
+.zoom_slider {
+  position: fixed;
+  width: 100%;
+  background: $bcg-primary;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+  height: calc(100vh - 99px);
+
+
+  @media (max-width: 1140px) {
+    height: calc(100vh - 93px);
+  }
+
+  @media (max-width: 650px) {
+    height: 100vh;
+  }
+
+  .zoom_wrap {
+    display: flex;
+    flex-direction: column;
+    max-width: 1224px;
+    margin: 0 auto;
+    padding: 0 16px 16px;
+    color: $primary-white;
+    justify-content: space-evenly;
+
+    height: calc(100vh - 99px);
+
+
+    @media (max-width: 1140px) {
+      height: calc(100vh - 93px);
+    }
+  
+    @media (max-width: 650px) {
+      height: 100vh;
+    }
+    
+
+    @media (max-width: 650px) {
+      justify-content: space-around;
+      height: 100vh;
+    }
+
+    span {
+      align-self: center;
+    }
+  }
+
+  .zoom_close {
+    align-self: flex-end;
+    cursor: pointer;
+    margin-bottom: 45px;
+  }
+
+  .zoom_photo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 16px;
+    flex-grow: 1;
+
+    @media (max-width: 650px) {
+      justify-content: center;
+    }
+
+    .zoom_img {
+      height: 100%;
+      div {
+        position: relative !important;
+        max-width: 800px;
+        height: 100%;
+        
+        // @media (max-width: 1366px) {
+        //   height: 340px;
+        // }
+
+        @media (max-width: 650px) {
+          max-width: none;
+          width: 100%;
+          // height: 320px;
+        }
+      }
+
+      img {
+        position: relative !important;
+        display: inline !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain !important
+      }
+    }
+
+    div:nth-child(1), div:nth-child(3){
+      @media (max-width: 650px) {
+        display: none;
+      }
+    }
+  } 
+
+  .next_left, .next_right {
+    width: 68px;
+    height: 68px;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+      circle {
+        fill: white;
+      }
+
+      path {
+        fill: #171E26;
+      }
+    }
+  }
+  
+  .next_right {
+    transform: rotate(180deg);
+  }
+  
+  .number {
+    color: $secondary-hight;
+  }
+  
+  .mobile_btn_wrap {
+    display: none;
+    width: 200px;
+    margin: 0 auto;
+    justify-content: space-between;
+  
+    @media (max-width: 650px) {
+      display: flex;
+    }
+  }
+}

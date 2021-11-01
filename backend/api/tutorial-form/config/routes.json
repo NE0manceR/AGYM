@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tutorial-forms",
+      "handler": "tutorial-form.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tutorial-forms/count",
+      "handler": "tutorial-form.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tutorial-forms/:id",
+      "handler": "tutorial-form.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tutorial-forms",
+      "handler": "tutorial-form.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tutorial-forms/:id",
+      "handler": "tutorial-form.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tutorial-forms/:id",
+      "handler": "tutorial-form.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

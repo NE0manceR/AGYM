@@ -1,0 +1,57 @@
+@import './colors.moduls.scss';
+
+.video {
+  cursor: pointer;
+
+
+  @media (max-width: 1150px) {
+    left: calc( 60% - 133px );
+  }
+
+  img {
+    &:hover {
+      transform: scale(0.9,0.9);
+    }
+  }
+}
+
+.video_wrap  {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 13;
+}
+
+.btn_wrap {
+  position: absolute;
+  top: 0;
+  padding: 24px 20px 0 0;
+  align-self: flex-end;
+  z-index: 10;
+}
+
+.video_animation {
+  display: flex;
+  width: 100%;
+  align-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.gym_video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  @media (max-width: 800px) {
+    height: auto;
+    width: 100%;
+  }
+}

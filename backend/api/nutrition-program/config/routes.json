@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/nutrition-programs",
+      "handler": "nutrition-program.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/nutrition-programs/count",
+      "handler": "nutrition-program.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/nutrition-programs/:id",
+      "handler": "nutrition-program.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/nutrition-programs",
+      "handler": "nutrition-program.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/nutrition-programs/:id",
+      "handler": "nutrition-program.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/nutrition-programs/:id",
+      "handler": "nutrition-program.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

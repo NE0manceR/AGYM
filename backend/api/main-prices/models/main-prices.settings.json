@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "main_prices",
+  "info": {
+    "name": "Main Prices",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "month": {
+      "type": "string"
+    },
+    "training": {
+      "type": "string"
+    },
+    "bonuse": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "list.list"
+    },
+    "savingPrice": {
+      "type": "string"
+    },
+    "time": {
+      "type": "enumeration",
+      "enum": [
+        "daily",
+        "afterdark"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@import './colors.moduls.scss';
+
+
+.points {
+  display: flex;
+  justify-content: space-between;
+  width: 138px;
+  margin-right: 70px;
+}
+
+
+.wrap {
+  display: flex;
+  align-items: baseline;
+
+  span {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+
+.point_number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 36px;
+  background: $bcg-low;
+  border-radius: 50%;
+  color: $primary-white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.point_active {
+  background: $primary-gradient;
+  color: $bcg-low;
+}
+

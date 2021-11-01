@@ -1,0 +1,57 @@
+.social {
+  display: flex;
+  align-items: center;
+  
+  span {
+    font-size: 18px;
+    color: white;
+    margin-right: 8px;
+  }
+
+  div {
+    display: flex;
+    gap: 20px;
+
+    a {
+      display: inline-block;
+      background-repeat: no-repeat; 
+      width: 26px;
+      height: 26px;
+      cursor: pointer;
+    }
+
+    a:nth-child(1) {
+      background: url('../../public/social-icons/facebook-white.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      &:hover {
+        background: url('../../public/social-icons/facebook-color.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+    a:nth-child(2) {
+      background: url('../../public/social-icons/instagram-white.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      &:hover {
+        background: url('../../public/social-icons/instagram-color.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+    a:nth-child(3) {
+      background: url('../../public/social-icons/youtube-white.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      &:hover {
+        background: url('../../public/social-icons/youtube-color.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}

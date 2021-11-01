@@ -1,0 +1,87 @@
+@import './colors.moduls.scss';
+
+.footer {
+  position: relative;
+  max-width: 1224px;
+  margin: 0 auto;
+  padding: 50px 0 50px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    padding: 0 0 50px;
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  color: $primary-white;
+  padding-left: 16px;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 16px;
+  }
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.text {
+  text-decoration: none;
+  color: white;
+  white-space: pre-wrap;
+  margin-bottom: 4px;
+}
+
+.form {
+  width: 565px;
+  height: 200px;
+  border: 1px solid red;
+}
+
+.footer_social {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 16px;
+
+  span {
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  div, span {
+    align-self: flex-start;
+  }
+}
+
+.under {
+  display: flex;
+  justify-content: center;
+  padding: 14px 0;
+  background-color: $bcg-low;
+  color:  white;
+}
+
+.map {
+  height: 640px;
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.mob_map {
+  display: none;
+  height: 250px;
+
+  @media (max-width: 1024px) {
+    order: -1;
+    display: block;
+    margin-bottom: 32px;
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nutrition_programs",
+  "info": {
+    "name": "Nutrition Program",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "whatYouGetList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "list.what-you-get"
+    },
+    "fromYouList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "list.what-you-get"
+    },
+    "howItWorksList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "list.what-you-get"
+    },
+    "price": {
+      "type": "string"
+    }
+  }
+}

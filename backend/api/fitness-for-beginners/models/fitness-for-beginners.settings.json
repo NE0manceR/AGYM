@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "fitness_for_beginners",
+  "info": {
+    "name": "Fitness For Beginners",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "video_url": {
+      "type": "string"
+    },
+    "galleries": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

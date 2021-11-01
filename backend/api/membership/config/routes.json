@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/membership",
+      "handler": "membership.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/membership",
+      "handler": "membership.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/membership",
+      "handler": "membership.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

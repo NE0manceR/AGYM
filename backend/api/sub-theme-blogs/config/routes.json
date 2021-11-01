@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sub-theme-blogs",
+      "handler": "sub-theme-blogs.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sub-theme-blogs/count",
+      "handler": "sub-theme-blogs.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sub-theme-blogs/:id",
+      "handler": "sub-theme-blogs.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sub-theme-blogs",
+      "handler": "sub-theme-blogs.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sub-theme-blogs/:id",
+      "handler": "sub-theme-blogs.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sub-theme-blogs/:id",
+      "handler": "sub-theme-blogs.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

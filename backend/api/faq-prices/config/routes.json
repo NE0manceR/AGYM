@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/faq-prices",
+      "handler": "faq-prices.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/faq-prices/count",
+      "handler": "faq-prices.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/faq-prices/:id",
+      "handler": "faq-prices.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/faq-prices",
+      "handler": "faq-prices.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/faq-prices/:id",
+      "handler": "faq-prices.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/faq-prices/:id",
+      "handler": "faq-prices.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

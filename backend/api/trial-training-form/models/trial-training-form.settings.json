@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trial_training_forms",
+  "info": {
+    "name": "Trial Training Form"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullName": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    }
+  }
+}

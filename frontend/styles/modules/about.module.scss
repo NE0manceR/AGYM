@@ -1,0 +1,275 @@
+@import './colors.moduls.scss';
+
+.gym_bcg {
+  background: url('../../public//membership/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gym {
+  max-width: 1224px;
+  margin: 0 auto;
+  padding: 40px 16px 24px;
+}
+
+.crumbs {
+  margin-bottom: 42px;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  color: white;
+  font-size: 48px;
+  font-weight: 900;
+
+  span {
+    font-weight: 800;
+  }
+
+  @media (max-width: 580px) {
+    font-size: 30px;
+  }
+}
+
+.text_wrap {
+  display: flex;
+  gap: 48px;
+  color: white;
+  font-weight: 300;
+
+  a {
+    color: $primary-white;
+  }
+
+  @media (max-width: 1050px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 550px) {
+    gap: 0;
+  }
+}
+
+.text_wrap_more {
+  gap: 48px;
+}
+
+.right_text {
+  display: block;
+  max-width: 50%;
+  padding-top: 100px;
+  font-weight: 500;
+
+  a {
+    font-weight: 500;
+  }
+
+  @media (max-width: 1050px) {
+    padding-top: 0;
+  }
+
+  @media (max-width: 550px) {
+    display: none;
+  }
+}
+
+.more {
+  margin-top: 20px;
+  align-self: center;
+}
+
+.left_text {
+  display: block;
+  max-width: 50%;
+  font-weight: 500;
+}
+
+.show_text {
+  display: block;
+}
+
+.right_text, .left_text {
+  @media (max-width: 1050px) {
+    max-width: 100%;
+  }
+}
+
+.team_bcg {
+  background-color: $bcg-secondary;
+}
+
+.team {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-top: 40px;
+
+  .title {
+    display: block;
+    padding: 0 16px 24px;
+
+    margin-bottom: 0;
+  }
+
+  .title_text {
+    display: block;
+    padding: 0 0 40px 328px;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    color: $primary-white;
+
+    @media (max-width: 700px) {
+      padding: 0 16px 24px;
+    }
+  }
+}
+
+.member {
+  display: flex;
+  gap: 24px;
+  padding: 0 16px;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
+
+  .avatar {
+    width: 288px;
+    height: 288px;
+    object-fit: cover;
+    @media (max-width: 700px) {
+      align-self: center;
+      width: 268px;
+    height: 268px;
+    }
+  }
+
+  .main_sub_info {
+    display: none;
+    color: white;
+    font-weight: 400;
+    padding-bottom: 32px;
+
+    @media (max-width: 700px) {
+      display: block;
+    }
+  }
+
+  .name {
+    display: block;
+    max-width: 280px;
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  .prof {
+    display: block;
+    margin-bottom: 24px;
+    font-weight: 300;
+    font-size: 16px;
+    font-style: normal;
+    color: $primary-white;
+  }
+
+  .info_arrow {
+    width: 24px;
+    height: 24px;
+    path {
+      fill: $secondary-hight;
+    }
+  }
+
+  .info_arrow_active {
+    transform: rotate(-180deg);
+  }
+
+  .member_info {
+    @media (max-width: 700px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .info_btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    color: $secondary-hight;
+    margin-bottom: 90px;
+    cursor: pointer;
+    @media (max-width: 700px) {
+      display: none;
+    }
+  }
+
+  .main_info, .more_info {
+    color: white;
+    font-weight: 700;
+
+    @media (max-width: 700px) {
+      display: none;
+    }
+  }
+
+   .more_info {
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+
+  .more_info_text {
+    display: block;
+  }
+}
+
+
+.social_wrap {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.instagram_icon {
+  width: 26px;
+  height: 26px;
+  transition: 0.3s;
+  cursor: pointer;
+
+  path {
+    fill: $primary-white;
+  }
+
+  &:hover {
+
+    path {
+      fill: url(#paint1_radial);
+    }
+  }
+}
+
+.facebook_icon {
+  width: 26px;
+  height: 26px;
+  transition: 0.3s;
+  cursor: pointer;
+
+  path {
+    fill: $primary-white;
+  }
+
+  &:hover {
+
+    path {
+      fill: #3B5998;
+    }
+  }
+}
+

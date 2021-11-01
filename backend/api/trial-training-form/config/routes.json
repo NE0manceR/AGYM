@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/trial-training-forms",
+      "handler": "trial-training-form.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/trial-training-forms/count",
+      "handler": "trial-training-form.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/trial-training-forms/:id",
+      "handler": "trial-training-form.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/trial-training-forms",
+      "handler": "trial-training-form.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/trial-training-forms/:id",
+      "handler": "trial-training-form.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/trial-training-forms/:id",
+      "handler": "trial-training-form.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+@import './colors.moduls.scss';
+
+.personal {
+  max-width: 1224px;
+  margin: 0 auto;
+  padding: 40px 16px 100px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+
+  @media (max-width: 1050px) {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  
+  @media (max-width: 1050px) {
+    flex-direction: column;
+    margin-bottom: 0;
+
+    .main__video {
+      top: auto;
+      bottom: 102px;
+      left: 16px;
+    }
+  }
+
+  &__video {
+    position: absolute;
+    left: calc( 55% - 133px );
+    top: calc( 50% - 133px );
+
+    img {
+      @media (max-width: 1050px) {
+        width: 151px;
+        height: 151px;
+        left: auto;
+      }
+    }
+  }
+}
+
+.crumbs {
+  margin-bottom: 40px;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.img_wrap {
+  z-index: -1;
+
+  @media (max-width: 1050px) {
+    width: 220px;
+    align-self: flex-end;
+    padding-top: 16px;
+    @media (max-width: 1050px) {
+      align-self: flex-start;
+      margin-left: 58px;
+    }
+  }
+
+  img {
+
+    @media (max-width: 1250px) {
+      width: 400px;
+    }
+
+    @media (max-width: 1050px) {
+      width: 220px;
+    }
+  }
+}
+
+.text_wrap {
+  color: $primary-white;
+  font-size: 18px;
+  font-weight: 400;
+
+  @media (max-width: 1050px) {
+    align-self: flex-start;
+  }
+}
+
+.text {
+  display: block;
+  max-width: 450px;
+  margin-bottom: 24px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  font-size: 68px;
+  color: white;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 16px;
+  font-weight: 800;
+
+  span {
+    font-weight: 800;
+  }
+
+  @media (max-width: 600px) {
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 580px) {
+    font-size: 30px;
+  }
+}
+
+.check {
+  display: flex;
+  gap: 25px;
+  color: $primary-white;
+  font-weight: 400;
+  font-size: 18px;
+
+  img {
+    height: 38px;
+    width: 38px;
+    object-fit: cover;
+  }
+
+  span {
+    display: block;
+    max-width: 173px;
+  }
+}
+
+.check_wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  @media (max-width: 600px) {
+    padding-top: 40px;
+  }
+}
+
+.training {
+  font-size: 48px;
+  display: block;
+  padding-top: 100px;
+
+  @media (max-width: 870px ) {
+    display: flex;
+  }
+
+  @media (max-width: 580px) {
+    font-size: 30px;
+  }
+}
+
+.sport_integration {
+  display: flex;
+  justify-content: flex-end;
+  padding: 255px 0 200px;
+  background: url('/services/personal2.webp') no-repeat;
+  background-size: 80%;
+  background-position-y: 100px;
+  
+  @media (max-width: 1150px) {
+    padding: 255px 0 250px;
+  }
+
+  @media (max-width: 1050px) {
+    padding: 54px 0 355px;
+    justify-content: flex-start;
+    background: url('/services/personal3.webp') no-repeat;
+    background-position: center;
+    background-position-y: 0px;
+  }
+
+
+  @media (max-width: 750px) {
+    padding: 54px 0 400px;
+    background-position-y: 50px;
+  }
+
+  @media (max-width: 550px) {
+    padding: 54px 0 530px;
+    background-position-y: 250px;
+  }
+
+  @media (max-width: 450px) {
+    padding: 54px 0 350px;
+    background-position-y: 100px;
+  }
+
+  @media (max-width: 370px) {
+    background-position-y: 220px;
+  }
+
+  .integration_text {
+    display: block;
+    width: 600px;
+    margin-bottom: 24px;
+    font-size: 18px;
+    color: $primary-white;
+    font-weight: 700;
+  }
+}
+
+.price_text {
+  display: block;
+  font-weight: 900;
+  font-size: 18px;
+  margin-bottom: 24px;
+
+  span {
+    font-size: 12px;
+  }
+}
+
+.itegration_text {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.integration_title {
+  display: block;
+  font-size: 36px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}

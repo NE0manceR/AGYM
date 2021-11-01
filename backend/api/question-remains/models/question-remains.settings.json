@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "question_remains",
+  "info": {
+    "name": "Question Remains"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullname": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

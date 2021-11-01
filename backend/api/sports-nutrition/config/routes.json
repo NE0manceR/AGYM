@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sports-nutrition",
+      "handler": "sports-nutrition.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sports-nutrition",
+      "handler": "sports-nutrition.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sports-nutrition",
+      "handler": "sports-nutrition.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

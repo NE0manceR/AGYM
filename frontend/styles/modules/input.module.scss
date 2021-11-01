@@ -1,0 +1,82 @@
+@import './colors.moduls.scss';
+
+
+.input_wrap {
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+  background-color: $primary-white;
+  padding: 1.1px;
+
+  input, textarea {
+    width: 100%;
+    height: 100%;
+    padding: 23px;
+    font-size: 16px;
+    font-weight: 700;
+    color: $secondary-hight;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background-color: $bcg-primary;
+    -moz-appearance: textfield;
+    &::-webkit-inner-spin-button { 
+      display: none;
+    }
+
+    @media (max-width: 687px) {
+      font-size: 16px;
+    }
+
+    &::placeholder {
+      color: white;
+    }
+  }
+
+  textarea {
+    vertical-align: top;
+    resize: none;
+  }
+}
+
+
+.input_info_wrap {
+  position: absolute;
+  display: none;
+  overflow: hidden;
+  top: -9px;
+  left: 30px;
+  background-color: $bcg-primary;
+}
+
+.input_info {
+  font-size: 16px;
+  font-weight: 700;
+  background: $primary-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+}
+
+.inputActive {
+  background: $primary-gradient;
+  & .active_info {
+    display: block;
+  }
+}
+
+.inpuNoActive {
+  background: $primary-white;
+}
+
+.inputError {
+  background: #EB5050;
+
+  input {
+    color: #EB5050;
+
+    &::placeholder {
+      color: #EB5050;
+    }
+  }
+}

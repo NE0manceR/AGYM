@@ -1,0 +1,102 @@
+{
+  "kind": "collectionType",
+  "collectionName": "program_forms",
+  "info": {
+    "name": "Program Forms"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SlopingSides": {
+      "type": "string"
+    },
+    "age": {
+      "type": "string"
+    },
+    "bars": {
+      "type": "string"
+    },
+    "before": {
+      "type": "string"
+    },
+    "benchPress": {
+      "type": "string"
+    },
+    "bottomBack": {
+      "type": "string"
+    },
+    "chest": {
+      "type": "string"
+    },
+    "deadlift": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "experience": {
+      "type": "string"
+    },
+    "forearm": {
+      "type": "string"
+    },
+    "goal": {
+      "type": "string"
+    },
+    "heart": {
+      "type": "string"
+    },
+    "height": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "neck": {
+      "type": "string"
+    },
+    "newWeight": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "pullBlock": {
+      "type": "string"
+    },
+    "pullUp": {
+      "type": "string"
+    },
+    "restrictions": {
+      "type": "string"
+    },
+    "sex": {
+      "type": "string"
+    },
+    "shin": {
+      "type": "string"
+    },
+    "shoulder": {
+      "type": "string"
+    },
+    "squats": {
+      "type": "string"
+    },
+    "straightAbdomen": {
+      "type": "string"
+    },
+    "thigh": {
+      "type": "string"
+    },
+    "upperBack": {
+      "type": "string"
+    },
+    "weight": {
+      "type": "string"
+    }
+  }
+}

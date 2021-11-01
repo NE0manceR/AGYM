@@ -1,0 +1,20 @@
+@import './colors.moduls.scss';
+
+.bread {
+  display: flex;
+  color: $primary-white;
+  align-items: flex-end;
+  gap: 4px;
+
+
+  a {
+    font-size: 14px;
+    text-decoration: none;
+    color: $secondary-hight;
+  }
+
+  a:last-child {
+    pointer-events: none;
+    color: $primary-white;
+  }
+}

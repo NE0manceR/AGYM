@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_list_prices_list_prices",
+  "info": {
+    "name": "list-prices",
+    "icon": "euro-sign"
+  },
+  "options": {},
+  "attributes": {
+    "month": {
+      "type": "string"
+    },
+    "dailyPrices": {
+      "type": "string"
+    },
+    "afterDarkPrices": {
+      "type": "string"
+    },
+    "workout": {
+      "type": "string"
+    },
+    "bonuse": {
+      "type": "string"
+    },
+    "freezing": {
+      "type": "string"
+    }
+  }
+}

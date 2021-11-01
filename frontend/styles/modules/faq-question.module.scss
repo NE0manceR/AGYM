@@ -1,0 +1,55 @@
+@import './colors.moduls.scss';
+
+.faq {
+  border-bottom: 1px solid $primary_white;
+}
+
+.faq_active {
+  border-bottom: 3px solid $secondary-hight;
+}
+
+.title_wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  cursor: pointer;
+  margin-bottom: 16px;
+  padding-top: 24px;
+
+  span {
+    font-size: 16px;
+    font-weight: 800;
+    color: white;
+  }
+}
+
+.answer_wrap {
+  max-width: 770px;
+  font-size: 14px;
+  color: white;
+  overflow: hidden;
+  padding-left: 20px;
+
+  span {
+    display: block;
+  }
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 24px;
+  height: 24px;
+  transform: rotate(180deg);
+}
+
+.active_arrow {
+  transform: rotate(360deg);
+}
+
+.active {
+  padding: 16px 0 16px 20px;
+}
+

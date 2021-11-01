@@ -1,0 +1,45 @@
+@import './colors.moduls.scss';
+
+.faq {
+  max-width: 1224px;
+  margin: 0 auto;
+  padding: 40px 16px 64px;
+
+  @media (max-width: 600px) {
+    padding: 20px 16px 64px;
+  }
+
+  .crumbs {
+    margin-bottom: 40px;
+  
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+}
+
+.title {
+  font-size: 48px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 48px;
+  font-weight: 800;
+
+  span {
+    font-weight: 800;
+  }
+
+  @media (max-width: 600px) {
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 580px) {
+    font-size: 30px;
+  }
+}
+
+.question_wrap {
+  max-width: 912px;
+  margin: 0 auto;
+}

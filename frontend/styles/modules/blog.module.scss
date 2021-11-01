@@ -1,0 +1,406 @@
+@import './colors.moduls.scss';
+
+
+.blog {
+  max-width: 1224px;
+  margin: 0 auto;
+  padding: 40px 16px 124px;
+}
+
+.title {
+  display: block;
+  margin-bottom: 42px;
+  font-weight: 900;
+  font-size: 48px;
+}
+
+.crumbs {
+  margin-bottom: 42px;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.main {
+  display: flex;
+  gap: 24px;
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+  }
+}
+
+.marker {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  width: 288px;
+  color: $primary-white;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 30px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $bcg-low;
+  }
+}
+
+.marker_active {
+  background-color: $bcg-low;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+  .more_btn {
+    align-self: center;
+  }
+}
+
+.search_wrap_bcg {
+  background-color: $bcg-low;;
+  padding: 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 32px;
+
+  &:hover .search_icon_wrap {
+    background-color: $bcg-medium;
+  }
+
+  &:hover {
+    background-color: $bcg-medium;
+  }
+}
+
+.search_wrap {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  justify-content: space-between;
+  padding: 0 0 0 32px;
+  border-radius: 10px;
+  background: $bcg-secondary;
+
+  input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: $primary-white;
+    font-size: 14px;
+
+    &::placeholder {
+      color: $bcg-medium;
+    }
+  }
+}
+
+.search_icon_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 26px;
+  border-radius: 10px;
+  background: $bcg-low;
+}
+
+.search_active {
+  background: $primary-gradient;
+
+  .search_icon_wrap {
+    background: $primary-gradient;
+    svg path {
+      fill: $bcg-primary;
+    }
+  }
+}
+
+.topic {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: 600px) {
+    justify-content: center;
+  }
+
+
+}
+
+.theme {
+  display: flex;
+  gap: 8px;
+  
+
+  .item {
+    display: block;
+    padding: 10px;
+    width: max-content;
+    border-radius: 30px;
+    font-size: 10px;
+  }
+}
+
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 360px;
+  width: 280px;
+  text-decoration: none;
+  color: $primary-white;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: $bcg-low;
+  margin-bottom: 32px;
+
+  .img_wraper {
+    position: relative !important;
+    width: 288px !important;
+    height: 191px;
+
+    div {
+   
+  
+      img {
+        object-fit: cover !important;
+      }
+    }
+  }
+
+  .card_title {
+    display: block;
+    padding: 0 24px 8px;
+    font-weight: 900;
+    font-size: 24px;
+    max-height: 80px;
+    overflow: hidden; 
+    text-overflow: clip;
+  }
+
+  &:hover .card_hover {
+    opacity: 1;
+    z-index: 999;
+  }
+}
+
+.card_hover {
+  position: absolute;
+  display: flex;
+  opacity: 0;
+  flex-direction: column;
+  padding: 27px 24px 22px;
+  width: 100%;
+  height: 100%;
+  background-color: $secondary-hight;
+
+  & .theme {
+    padding: 0;
+    margin-bottom: 18px;
+  }
+
+  & .card_title {
+    padding: 0;
+    margin-bottom: 8px;
+    color: $bcg-primary;
+  }
+
+  & .small_descritpion {
+    font-size: 14px;
+    font-weight: 700;
+    color: $bcg-primary;
+    max-height: 100px;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+    // white-space: nowrap;
+  }
+
+  .more {
+    display: flex;
+    align-content: center;
+    text-decoration: none;
+    color: $bcg-low;
+    gap: 4px;
+    margin-bottom: 24px;
+    font-weight: 900;
+  }
+
+  .social_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: $bcg-primary;
+    align-items: flex-start;
+    flex-grow: 1;
+  }
+
+  .share_btn_wrap {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+    span {
+      font-weight: 900;
+    }
+
+    .share_icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    .shareTips {
+      position: relative;
+      height: 20px;
+      color: white;
+    
+      &:hover {
+        &:after {
+          top: -24px;
+          padding: 4px;
+          position: absolute;
+          font-size: 10px;
+          background: #0F1318;
+          border-radius: 18px;
+          width: max-content;
+        }
+      }
+
+      &:hover {
+        svg {
+          path {
+            fill: white;
+          }
+        }
+      }
+
+      svg {
+        path {
+          fill: $bcg-primary;
+        }
+      }
+    }
+
+    .shareLink {
+      position: relative;
+    
+      &:hover {
+        &:after {
+          left: -45px;
+          content: 'Скопіювати посилання';
+        }
+      }
+    }
+    
+    .shareTelegram {
+      position: relative;
+      color: white;
+    
+      &:hover {
+        &:after {
+          left: -10px;
+          content: 'Telegram';
+          color: white;
+        }
+      }
+    }
+
+    .shareViber {
+  &:hover {
+    &:after {
+      left: -4px;
+      content: 'Viber';
+    }
+  }
+}
+
+    
+    .shareMail {
+      color: white;
+
+      &:hover {
+        &:after {
+          left: -4px;
+          content: 'Email';
+        }
+      }
+    }
+  }
+}
+
+.theme {
+  padding: 24px 24px 16px;
+}
+
+.eat  {
+  background-color: #35786C;
+}
+
+.taining {
+  background-color: #564C88;
+}
+
+.life {
+  background-color: #4c8488;
+}
+
+.beauty {
+  background-color: #88504c;
+}
+
+.nutraceuticals {
+  background-color: #884c68;
+}
+
+.advices {
+  background-color: #58884c;
+}
+
+.club {
+  background-color: #88844c;
+}
+
+.recipes {
+  background-color: #658248;
+}
+
+.navigation {
+  max-width: 750px;
+  @media (max-width: 750px) {
+    display: none;
+  }
+}
+
+.mob_navigation {
+  display: none;
+  margin-bottom: 32px;
+  overflow: scroll;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+  @media (max-width: 750px) {
+    display: flex;
+  }
+
+  .marker {
+
+    @media (max-width: 750px) {
+      width: max-content;
+      flex-shrink: 0;
+      font-size: 18px;
+    }
+
+  }
+
+}
+

@@ -1,0 +1,27 @@
+@import './colors.moduls.scss';
+
+.secondary {
+  display: none;
+  padding: 16px 24px;
+  font-weight: bold;
+  color: $primary_white;
+  background-color: transparent;
+  border: 1px solid $primary_white;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+
+  @media (max-width: 550px) {
+    display: block;
+  }
+
+  &:hover {
+    background-color: $primary-white;
+    color: $bcg-primary;
+  }
+
+  &:active {
+    background-color: transparent;
+    border-color: transparent;
+  }
+}

@@ -1,0 +1,800 @@
+@import './colors.moduls.scss';
+
+.nutrition_bcg {
+  position: relative;
+}
+
+.main {
+  max-width: 1224px;
+  margin: 0 auto;
+  padding: 40px 16px 100px;
+  color: $primary-white;
+
+  @media (max-width: 500px) {
+    padding: 40px 16px 0;
+  }
+
+  
+
+  .crumbs {
+    margin-bottom: 40px;
+  
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+}
+
+.main_content {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 1050px) {
+    flex-direction: column;
+
+    .nutri_video {
+      top: auto;
+      bottom: 40px;
+      left: 16px;
+    }
+  }
+}
+
+.nutri_video {
+  position: absolute;
+  left: calc( 55% - 133px );
+  top: calc( 50% - 133px );
+
+  @media (max-width: 1050px) {
+    display: none;
+  }
+
+  img {
+    @media (max-width: 580px) {
+      width: 151px;
+      height: 151px;
+      left: auto;
+    }
+  }
+}
+
+
+.img_wrap {
+  z-index: -1;
+
+  @media (max-width: 360px) {
+    height: auto;
+  }
+
+  @media (max-width: 1050px) {
+    display: none;
+    align-self: flex-end;
+    justify-content: flex-end;
+  }
+
+  img {
+    width: 100%;
+
+    @media (max-width: 1050px) {
+      width: 230px;
+    }
+
+    // @media (max-width: 850px) {
+    //   width: 213px;
+    //   transform: translate(74px, -115px);
+    // }
+
+    // @media (max-width: 360px) {
+    //   width: auto;
+    //   height: 230px;
+    //   transform: translate(0px, 25px);
+    // }
+  }
+}
+
+.text_wrap {
+  color: $primary-white;
+  font-size: 18px;
+  font-weight: 400;
+
+  @media (max-width: 1050px) {
+    align-self: flex-start;
+  }
+}
+
+.text {
+  display: block;
+  max-width: 500px;
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 900;
+
+  @media (max-width: 600px) {
+    font-size: 14px;
+    display: none;
+  }
+  
+ 
+}
+
+.text2 {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 24px;
+
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
+
+  ul {
+    margin-left: 20px;
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  font-size: 68px;
+  color: white;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 16px;
+  font-weight: 800;
+
+  span {
+    font-weight: 800;
+  }
+
+  @media (max-width: 600px) {
+    margin-bottom: 32px;
+    width: auto;
+  }
+
+  @media (max-width: 580px) {
+    font-size: 30px;
+  }
+}
+
+.btn_wrap {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start
+  }
+
+  .btn_text {
+    display: block;
+    max-width: 168px;
+    font-size: 18px;
+    font-weight: 700;
+    color: $secondary-hight;
+  }
+}
+
+.consultation_btn {
+  font-size: 16px;
+  
+  div span {
+    padding: 16px 18px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 15px;
+  }
+}
+
+.mobile_video {
+  display: none;
+  padding-top: 20px;
+
+  & > img {
+    width: 195px;
+
+    @media (max-width: 374px) {
+      width: 150px;
+    }
+
+    @media (max-width: 400px) {
+      transform: translateX(-50px);
+      z-index: -1;
+    }
+  }
+
+  .nutri_video_mobile {
+
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  @media (max-width: 1050px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.fallout_bcg {
+  padding: 64px 0;
+  background-color: $bcg-primary;
+
+  @media (max-width: 780px) {
+    padding: 32px 0;
+  }
+}
+
+.fallout {
+  max-width: 1224px;
+  margin: 0 auto;
+
+  .title {
+    display: block;
+    padding: 0 16px;
+    width: 750px;
+    font-size: 48px;
+
+    @media (max-width: 780px) {
+      font-size: 30px;
+      display: flex;
+      width: auto;
+    }
+  }
+}
+
+.fallout_img_bcg {
+  @media (max-width: 930px) {
+    padding-left: 16px;
+  }
+}
+
+.fallout_img {
+  height: 847px;
+  width: 100%;
+  background: url('../../public/nutrition/fallout.webp') no-repeat;
+  background-size: contain;
+  background-position-x: right;
+
+  @media (max-width: 930px) {
+    height: 730px;
+    background: url('../../public/nutrition/fallout2.webp') no-repeat;
+    background-size: cover;
+  }
+}
+
+.why__bcg {
+  background-color: $bcg-secondary;
+}
+
+.why {
+  display: flex;
+  max-width: 1015px;
+  margin: 0 auto;
+  padding: 64px 16px;
+
+  @media (max-width: 1050px) {
+    flex-direction: column;
+  }
+
+  .title {
+    display: block;
+    font-size: 48px;
+    width: auto;
+    margin-bottom: 24px;
+
+    @media (max-width: 600px) {
+      font-size: 27px;
+    }
+  }
+
+  img {
+    width: 487px;
+    
+    @media (max-width: 1050px) {
+      width: 100%;
+    }
+  }
+}
+
+.wh_text {
+  font-size: 18px;
+  font-weight: 700;
+  color: $primary-white;
+
+  .consultation_btn {
+    font-size: 16px;
+    
+    div span {
+      padding: 16px 18px;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width: 1050px) {
+    order: -1;
+  }
+
+  ul {
+    margin-left: 20px;
+    line-height: 25px;
+  }
+
+  span:nth-child(4) {
+    display: block;
+    margin-bottom: 24px;
+  }
+}
+
+.for {
+  height: 550px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  background:url('../../public/nutrition/for-bcg.webp') no-repeat;
+  background-size: contain;
+  background-position: right;
+
+  @media (max-width: 1270px) {
+    height: 430px;
+  }
+
+  @media (max-width: 1020px) {
+    background: none;
+    height: auto;
+    padding: 32px 16px;
+  }
+
+  .consultation_btn {
+    font-size: 16px;
+    
+    div span {
+      padding: 16px 18px;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 15px;
+    }
+  }
+}
+
+.for_bcg {
+  background-color: $bcg-low ;
+}
+
+.for_content {
+  width: 1224px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 700;
+  color: $primary-white;
+
+  @media (max-width: 1224px) {
+    width: 100%;
+  }
+
+  ul {
+    line-height: 36px;
+    margin-bottom: 24px;
+    margin-left: 20px;
+  }
+
+  .title {
+    display: block;
+    font-size: 48px;
+    margin-bottom: 24px;
+
+    @media (max-width: 580px) {
+      font-size: 30px;
+    }
+  }
+}
+
+.mobile_bcg {
+  display: none;
+  width: 100%;
+
+  @media (max-width: 1020px) {
+    display: block;
+  }
+}
+
+.time_bcg {
+  background-color: #7DE3FF;
+}
+
+.time_content {
+  max-width: 1015px;
+  display: flex;
+  margin: 0 auto;
+
+  @media (max-width: 1090px) {
+    flex-direction: column;
+  }
+
+  .title {
+    font-weight: 900;
+    font-size: 48px;
+    color: $bcg-primary;
+      
+    @media (max-width: 500px) {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .text {
+    font-weight: 700;
+  }
+
+  .time_img {
+    height: 530px;
+
+    @media (max-width: 1150px) {
+      height: 400px;
+    }
+
+    @media (max-width: 1090px) {
+      object-fit: contain;
+    }
+  }
+}
+
+.time_text_wrap {
+  color: $bcg-primary;
+  display: flex;
+  padding: 42px 16px 0;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.black_btn {
+  text-decoration: none;
+  width: max-content;
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 700;
+  color: $primary-white;
+  background-color: $bcg-primary;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 8px;
+
+  @media (max-width: 500px) {
+    font-size: 15px;
+  }
+
+    &:hover {
+    background-color: transparent;
+    border: 1px solid $bcg-primary;
+    color: $bcg-primary;
+  }
+}
+
+.text_text {
+  display: block;
+  max-width: 500px;
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 700;
+
+  @media (max-width: 600px) {
+    font-size: 18px;
+  }
+}
+
+.your_nutrition {
+  padding: 64px 16px;
+  @media (max-width: 500px) {
+    padding: 24px 16px;
+  }
+}
+
+.title_nutrition {
+  display: block;
+  text-align: center;
+  width: auto;
+  font-size: 48px;
+  margin-bottom: 32px;
+
+  @media (max-width: 500px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 350px) {
+    font-size: 24px;
+  }
+}
+
+.nutrition_content {
+  max-width: 1032px;
+  margin: 0 auto;
+  display: flex;
+  gap: 24px;
+
+  img {
+    object-fit: contain;
+    align-self: flex-start;
+
+    @media (max-width: 850px) {
+      align-self: center;
+      margin-bottom: 24px;
+    }
+  }
+
+  @media (max-width: 850px) {
+    flex-direction: column;
+  }
+}
+
+.nutrition_content_text {
+  display: flex;
+  flex-direction: column;
+  text-align: initial;
+
+  .name {
+    font-size: 24px;
+    font-weight: 900;
+    color: $secondary-hight;
+    margin-bottom: 8px;
+  }
+
+  .prof {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    color: $primary-white;
+    margin-bottom: 24px;
+  }
+
+  .nutri_text, .more_text {
+    color: $primary-white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700;
+  }
+
+  .more {
+    display: flex;
+    color: $secondary-hight;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+
+    svg {
+      path {
+        fill: $secondary-hight;
+      }
+    }
+  }
+
+  .more_active {
+
+    svg {
+      transform: rotate(-180deg);
+    }
+  }
+}
+
+.more_text_wrap {
+  overflow: hidden;
+  height: 0;
+  margin-bottom: 24px;
+}
+
+.more_text {
+  display: block;
+}
+
+.price_bcg {
+  background-color: $bcg-low;
+}
+
+.price {
+  max-width: 1224px;
+  margin: 0 auto;
+  padding: 40px 0 100px;
+  
+  @media (max-width: 1250px) {
+    padding: 40px 16px 100px;
+  }
+
+  .title {
+    font-weight: 900;
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .card_wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    @media (max-width: 840px) {
+      justify-content: center;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid $secondary-hight;
+      border-radius: 20px;
+      padding: 42px  33px;
+      width: max-content;
+      color: $primary-white;
+
+      @media (max-width: 450px) {
+        padding: 42px  8px;
+      }
+
+      &__title {
+        font-weight: 900;
+        font-size: 36px;
+        margin-bottom: 16px;
+      }
+
+      &__money {
+        font-weight: 900;
+        font-size: 48px;
+        margin-bottom: 8px;
+      }
+
+      &__description {
+        width: 326px;
+        height: 57px;
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 70px;
+        align-items: center;
+
+        span {
+          font-weight: 900;
+          font-size: 24px;
+          display: block;
+          text-align: center;
+        }
+
+        @media (max-width: 450px) {
+          width: 100%;
+        }
+      }
+
+      &__btn {
+        margin-bottom: 65px;
+      }
+
+      &__hour {
+        font-weight: 900;
+        font-size: 24px;
+        margin-bottom: 32px;
+        color: $secondary-hight;
+      }
+
+      &__info_wrap {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      &__what {
+        align-self: flex-start;
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 24px;
+      }
+
+      &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 32px;
+      }
+
+      &__item {
+        display: flex;
+        align-items: flex-start;
+        width: 326px;
+        gap: 4px;
+
+        @media (max-width: 450px) {
+          width: 100%;
+        }
+
+        img {
+          object-fit: contain;
+        }
+      }
+
+      &__footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .card:last-child {
+      background: rgba(0, 201, 255, 0.15);
+    }
+
+    .card:nth-child(3) {
+      p {
+        background-color: #0D2E3A;
+      }
+    }
+
+    .card:nth-child(1):hover, .card:nth-child(2):hover  {
+      border-color: #4EEFD1;
+    }
+  }
+}
+
+.gallery {
+  max-width: 1224px;
+  margin: 0 auto;
+  padding: 64px 16px;
+  .title {
+    display: block;
+    font-weight: 900;
+    font-size: 48px;
+    margin-bottom: 32px;
+  }
+}
+
+
+.from_you {
+  display: flex;
+  background-color: $bcg-secondary;
+  gap: 28px;
+
+  @media (max-width: 1050px) {
+    
+  }
+
+  &__img {
+    width: 50%;
+    background: url('../../public/nutrition/16.webp') no-repeat;
+    background-size: cover;
+    height: 548px;
+
+    @media (max-width: 1050px) {
+      display: none;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (max-width: 1050px) {
+      padding: 50px 16px;
+    }
+
+    .title {
+      display: block;
+      font-weight: 900;
+      font-size: 48px;
+    }
+
+    ul {
+      margin-left: 20px;
+      font-size: 18px;
+      color: $primary-white;
+      line-height: 24px;
+      margin-bottom: 24px;
+    }
+
+  }
+}

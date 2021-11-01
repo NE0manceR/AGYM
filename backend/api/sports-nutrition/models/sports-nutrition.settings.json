@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "sports_nutritions",
+  "info": {
+    "name": "Sports nutrition",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "video_url": {
+      "type": "string"
+    },
+    "galleries": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

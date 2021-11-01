@@ -1,0 +1,238 @@
+@import './colors.moduls.scss';  
+
+
+.newbie {
+  position: relative;
+  max-width: 1224px;
+  margin: 0 auto;
+  padding: 40px 16px 100px;
+
+  .crumbs {
+    margin-bottom: 40px;
+  
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+  
+}
+
+.main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  background: url('/services/newbie.webp') no-repeat;
+  background-position: right;
+  padding: 130px 0;
+
+  @media (max-width: 850px) {
+    padding: 0 0;
+    background: none;
+    flex-direction: column;
+    margin-bottom: 0;
+
+    .main__video {
+      top: auto;
+      bottom: 102px;
+      left: 16px;
+    }
+  }
+
+  &__video {
+    
+    position: absolute;
+    left: calc( 50% - 133px );
+    top: calc( 50% - 133px );
+    @media (max-width: 850px) {
+      display: none;
+    }
+
+    img {
+      @media (max-width: 850px) {
+        width: 151px;
+        height: 151px;
+        left: auto;
+      }
+    }
+  }
+}
+
+.img_wrap {
+  display: none;
+  width: 100%;
+  padding-top: 20px;
+  @media (max-width: 850px) {
+    display: flex;
+  }
+
+  & > img{
+    height: 270px;
+  }
+
+  .video_mobile {
+    width: 151px;
+    height: 151px;
+
+    img {
+      width: 151px;
+      height: 151px;
+      left: auto;
+    }
+  }
+  
+
+  // @media (max-width: 850px) {
+  //   padding-top: 40px;
+  //   height: 230px;
+  // }
+
+  // @media (max-width: 360px) {
+  //   height: auto;
+  // }
+
+  // img {
+  //   @media (max-width: 850px) {
+  //     width: 213px;
+  //     transform: translate(74px, -115px);
+  //   }
+
+  //   @media (max-width: 360px) {
+  //     width: auto;
+  //     height: 230px;
+  //     transform: translate(0px, 25px);
+  //   }
+  // }
+}
+
+.text_wrap {
+  color: $primary-white;
+  font-size: 18px;
+  font-weight: 400;
+
+  @media (max-width: 850px) {
+    align-self: flex-start;
+  }
+}
+
+.text {
+  display: block;
+  max-width: 450px;
+  margin-bottom: 24px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  font-size: 68px;
+  color: white;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 16px;
+  font-weight: 800;
+
+  span {
+    font-weight: 800;
+  }
+
+  @media (max-width: 600px) {
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 580px) {
+    font-size: 30px;
+  }
+}
+
+
+.check {
+  display: flex;
+  gap: 25px;
+  color: $primary-white;
+  font-weight: 400;
+  font-size: 18px;
+
+  img {
+    height: 38px;
+    width: 38px;
+    object-fit: cover;
+  }
+
+  span {
+    display: block;
+    max-width: 230px;
+  }
+}
+
+.check_wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  @media (max-width: 600px) {
+    padding-top: 40px;
+  }
+}
+
+.training {
+  font-size: 48px;
+  display: block;
+  padding-top: 100px;
+
+  @media (max-width: 870px ) {
+    display: flex;
+  }
+}
+
+.sport_integration {
+  display: flex;
+  justify-content: flex-end;
+  padding: 255px 0 300px;
+  background: url('/services/newbie2.webp') no-repeat;
+  background-size: 80%;
+  background-position-y: 100px;
+  
+  @media (max-width: 1150px) {
+    padding: 255px 0 250px;
+  }
+
+  @media (max-width: 1050px) {
+    padding: 54px 0 516px;
+    justify-content: flex-start;
+    background: url('/services/newbie3.webp') no-repeat;
+    background-position: center;
+    background-position-y: -140px;
+  }
+
+
+  @media (max-width: 750px) {
+    padding: 54px 0 450px;
+    background-position-y: -50px;
+
+  }
+
+  @media (max-width: 550px) {
+    padding: 54px 0 350px;
+  }
+}
+
+.integration_text {
+  max-width: 665px;
+}
+
+.integration_title {
+  display: block;
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+
+.itegration_text {
+  display: block;
+  max-width: 600px;
+  margin-bottom: 24px;
+  font-size: 18px;
+  color: $primary-white;
+  font-weight: 700;
+}

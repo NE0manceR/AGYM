@@ -1,0 +1,260 @@
+@import './colors.moduls.scss';
+
+
+.article {
+  max-width: 1224px;
+  margin: 0 auto;
+  padding: 40px 16px 124px;
+
+  @media (max-width: 600px) {
+    padding-bottom: 50px;
+  }
+}
+
+.share_wrap {
+  display: flex;
+  justify-content: space-between;
+  color: $primary-white;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 45px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  max-width: 1016px;
+  margin: 0 auto;
+}
+
+.link_back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: $primary-white;
+}
+
+.crumbs {
+  margin-bottom: 42px;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.share_btn_wrap {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+  
+
+  button {
+    display: flex;
+    align-items: center;
+  }
+
+  a {
+    height: 25px;
+  }
+}
+
+.share_icon {
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    path {
+      fill: $secondary-hight;
+    }
+  }
+}
+
+.shareLink {
+  position: relative;
+
+  &:hover {
+    &:after {
+      left: -45px;
+      content: 'Скопіювати посилання';
+    }
+  }
+}
+
+.shareTelegram {
+  position: relative;
+
+  &:hover {
+    &:after {
+      left: -10px;
+      content: 'Telegram';
+    }
+  }
+}
+
+.shareMail {
+  color: white;
+
+  &:hover {
+    &:after {
+      left: -4px;
+      content: 'Email';
+    }
+  }
+}
+
+.shareTips {
+  position: relative;
+  height: 24px;
+
+  &:hover {
+    &:after {
+      top: -24px;
+      padding: 4px;
+      position: absolute;
+      font-size: 10px;
+      background: #0F1318;
+      border-radius: 18px;
+      width: max-content;
+      color: white;
+    }
+  }
+}
+
+.shareViber {
+  &:hover {
+    &:after {
+      left: -4px;
+      content: 'Viber';
+    }
+  }
+}
+
+
+.article_title {
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.text {
+  margin-bottom: 48px;
+  font-size: 14px;
+  font-weight: 700;
+  color: $primary-white;
+}
+
+.blog_img {
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.share_info {
+  display: block;
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  color:  $secondary-hight;
+  @media (max-width: 600px) {
+    font-size: 18px;
+  }
+}
+
+.share_btn_info {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+
+  svg {
+    width: 40px;
+    height: 40px;
+
+    @media (max-width: 600px) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .shareViber {
+    &:hover {
+      &:after {
+        left: 4px;
+      }
+    }
+  }
+
+  .shareMail {
+    &:hover {
+      &:after {
+        left: 4px;
+      }
+    }
+  }
+
+  .shareTelegram {
+  
+    &:hover {
+      &:after {
+        left: 0px;
+      }
+    }
+  }
+  
+}
+
+
+
+.theme {
+  margin-bottom: 48px;
+  display: flex;
+  gap: 8px;
+  
+
+  .item {
+    display: block;
+    padding: 10px;
+    width: max-content;
+    border-radius: 30px;
+    font-size: 10px;
+    color: white;
+  }
+}
+
+
+.eat  {
+  background-color: #35786C;
+}
+
+.taining {
+  background-color: #564C88;
+}
+
+.life {
+  background-color: #D56535;
+}
+
+.beauty {
+  background-color: #E98286;
+}
+
+.nutraceuticals {
+  background-color: #7B61FF;
+}
+
+.advices {
+  background-color: #1896B8;
+}
+
+.club {
+  background-color: #487582;
+}
+
+.recipes {
+  background-color: #658248;
+}

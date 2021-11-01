@@ -1,0 +1,20 @@
+@import '../modules//colors.moduls.scss';
+.dot {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  background: $primary-gradient;
+  border-radius: 100%;
+
+  &::before {
+    position: absolute;
+    top: 36px;
+    left: -200px;
+    content: url('../../public/map/Location.png');
+  }
+}
+
+.map_google {
+  width: 50%;
+  height: 400px;
+}

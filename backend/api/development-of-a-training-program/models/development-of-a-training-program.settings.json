@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "development_of_a_training_programs",
+  "info": {
+    "name": "Development of a training program",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "video_url": {
+      "type": "string"
+    },
+    "galleries": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

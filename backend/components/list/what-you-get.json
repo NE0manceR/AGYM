@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_list_what_you_gets",
+  "info": {
+    "name": "what you get",
+    "icon": "list-ul",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

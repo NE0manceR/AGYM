@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/development-of-a-training-program",
+      "handler": "development-of-a-training-program.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/development-of-a-training-program",
+      "handler": "development-of-a-training-program.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/development-of-a-training-program",
+      "handler": "development-of-a-training-program.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

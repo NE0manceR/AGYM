@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "name": "About"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "city": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string"
+    },
+    "mobile_phone": {
+      "type": "string"
+    },
+    "working_phone": {
+      "type": "string"
+    },
+    "site": {
+      "type": "string"
+    },
+    "mail": {
+      "type": "string"
+    }
+  }
+}

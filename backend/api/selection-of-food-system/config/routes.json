@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/selection-of-food-system",
+      "handler": "selection-of-food-system.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/selection-of-food-system",
+      "handler": "selection-of-food-system.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/selection-of-food-system",
+      "handler": "selection-of-food-system.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

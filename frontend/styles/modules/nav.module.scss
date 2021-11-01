@@ -1,0 +1,131 @@
+@import '../modules//colors.moduls.scss';
+.nav_position {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $bcg-primary;
+  z-index: 2;
+}
+
+.nav {
+  max-width: 1224px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  &__logo {
+    
+  }
+
+  &__trial {
+    @media (max-width: 1140px) {
+      display: none;
+    }
+  }
+
+  &__link_wrap {
+    display: flex;
+    list-style: none;
+    
+    @media (max-width: 1140px) {
+      display: none;
+    }
+
+    li:hover {
+      position: relative;
+      background-color: #0F1318;
+
+      &:hover:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 4px;
+        background: $liner-gradient;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    a {
+      position: relative;
+      display: flex;
+      padding: 40px 24px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 700;
+      color: white;
+    }
+  }
+}
+
+.active_link {
+  position: relative;
+  background-color: #0F1318;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: $liner-gradient;
+    bottom: 0;
+    left: 0;
+  }
+
+}
+
+.drop_down {
+  position: relative;
+
+  div {
+    
+    a {
+      white-space: nowrap;
+      width: 100%;
+      padding: 16px;
+
+      &:hover:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 4px;
+        background: $liner-gradient;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+.drop_down__list {
+  position: absolute;
+  display: none;
+  background-color: #0F1318;
+}
+
+.drop_down:hover .drop_down__list {
+  display: block;
+}
+
+.mobile_element {
+  display: none;
+  width: 42px;
+  height: 42px;
+
+  @media (max-width: 1140px) {
+    display: block;
+  }
+}
+
+.mob_menu_icon {
+  display: none;
+  cursor: pointer;
+
+  @media (max-width: 1140px) {
+    display: block;
+  }
+}
+
